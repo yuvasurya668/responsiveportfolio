@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    background: lightcyan;
+    font-family: monospace;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100vw;
+    box-shadow: 1px 1px 10px 1px green inset;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  nav ul li {
+    margin: 30px 10px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: lightgreen;
+    padding: 4px;
+  }
+  nav ul li:hover {
+    transform: scale(1.2);
+    flex-wrap: wrap;
+  }
+  a:hover {
+    color: black;
+    border: 1px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  body {
+    color: black;
+    position: fixed;
+  }
+  .div1{
+    box-shadow: 1px 1px 10px 1px green inset;
+    height: auto;
+    font-size: larger;
+    width: 75%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 20px;
+
+  }
+  .div1 div{
+    padding: 35px;
+  }
+  @media screen and (max-width: 500px) {
+    nav ul li a {
+      font-size: smaller;
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+    .div1{
+      width: 90%;
+    }
+    .div1 div{
+      font-size: small;
+      padding: 10px;
+    }
+  }
+  @media screen and (min-width:501px){
+    nav {
+      height: 15vh;
+      margin-top: 5px;
+    }
+    nav ul li {
+      margin: 40px 40px;
+    }
+    nav ul li a {
+      font-size: x-large;
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+    .div1{
+      margin-top: 30px;
+      width: 90%;
+    }
+  }
